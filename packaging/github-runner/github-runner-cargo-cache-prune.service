@@ -1,6 +1,6 @@
 [Unit]
 Description=Prune shared GitHub Actions self-hosted Cargo cache (LRU by mtime)
-Documentation=https://github.com/BTCDecoded/rust-ci
+Documentation=https://github.com/bitcoincore-dev/rust-ci
 
 [Service]
 Type=oneshot

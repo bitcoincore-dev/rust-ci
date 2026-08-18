@@ -8,7 +8,7 @@ inputs:
   repository:
     description: Git URL for blvm-spec-lock (override for forks or mirrors).
     required: false
-    default: "https://github.com/BTCDecoded/blvm-spec-lock.git"
+    default: "https://github.com/bitcoincore-dev/blvm-spec-lock.git"
   depth:
     description: git clone --depth value (shallow clone).
     required: false

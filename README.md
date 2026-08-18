@@ -1,10 +1,10 @@
 # rust-ci
 
-Shared **GitHub Actions composite actions** for Rust repositories in the **BTCDecoded** org. The goal is one place to define how we install Rust, normalize CI for crates.io builds, and operate safely on **self-hosted** runners (disk and Cargo caches).
+Shared **GitHub Actions composite actions** for Rust repositories in the **bitcoincore-dev** org. The goal is one place to define how we install Rust, normalize CI for crates.io builds, and operate safely on **self-hosted** runners (disk and Cargo caches).
 
 This repository has **no crates**—only reusable workflow building blocks. Workflows reference actions with:
 
-`uses: BTCDecoded/rust-ci/<action-name>@main`
+`uses: bitcoincore-dev/rust-ci/<action-name>@main`
 
 (or a pinned SHA for reproducibility).
 
@@ -80,7 +80,7 @@ Typical sequence: `bind-env` → `restore` → build → `save` (and occasional 
 
 ### `setup-blvm-spec`
 
-Clones the [blvm-spec](https://github.com/BTCDecoded/blvm-spec) (Orange Paper) repository for **spec-lock** verification, mdBook includes, or any job that needs spec markdown on disk.
+Clones the [blvm-spec](https://github.com/bitcoincore-dev/blvm-spec) (Orange Paper) repository for **spec-lock** verification, mdBook includes, or any job that needs spec markdown on disk.
 
 | Input | Role |
 | --- | --- |
