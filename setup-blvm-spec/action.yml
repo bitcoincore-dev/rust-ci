@@ -18,7 +18,7 @@ inputs:
   repository:
     description: Git URL for blvm-spec (override for forks or mirrors).
     required: false
-    default: "https://github.com/BTCDecoded/blvm-spec.git"
+    default: "https://github.com/bitcoincore-dev/blvm-spec.git"
   depth:
     description: git clone --depth value (shallow clone).
     required: false

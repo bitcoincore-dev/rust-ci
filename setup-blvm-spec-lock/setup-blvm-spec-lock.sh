@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# Clone BTCDecoded/blvm-spec-lock for CI path dependency resolution.
+# Clone bitcoincore-dev/blvm-spec-lock for CI path dependency resolution.
 # Default: sibling of repo root at ../blvm-spec-lock (matches [patch.crates-io] and path deps).
 set -euo pipefail
 
 REPO_ROOT="$(pwd)"
-REPO_URL="${SETUP_BLVM_SPEC_LOCK_REPO:-https://github.com/BTCDecoded/blvm-spec-lock.git}"
+REPO_URL="${SETUP_BLVM_SPEC_LOCK_REPO:-https://github.com/bitcoincore-dev/blvm-spec-lock.git}"
 DEPTH="${SETUP_BLVM_SPEC_LOCK_DEPTH:-1}"
 DEST="$(dirname "$REPO_ROOT")/blvm-spec-lock"
 

@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# Clone BTCDecoded/blvm-spec for CI (PROTOCOL.md / ARCHITECTURE.md / Orange Paper).
+# Clone bitcoincore-dev/blvm-spec for CI (PROTOCOL.md / ARCHITECTURE.md / Orange Paper).
 # Default: sibling of repo root at ../blvm-spec (matches cargo-spec-lock --spec-path ../blvm-spec/...).
 # Optional: in-tree path (e.g. modules/blvm-spec) for mdBook and other layouts.
 set -euo pipefail
 
 REPO_ROOT="$(pwd)"
 TARGET="${SETUP_BLVM_SPEC_TARGET:-}"
-REPO_URL="${SETUP_BLVM_SPEC_REPO:-https://github.com/BTCDecoded/blvm-spec.git}"
+REPO_URL="${SETUP_BLVM_SPEC_REPO:-https://github.com/bitcoincore-dev/blvm-spec.git}"
 DEPTH="${SETUP_BLVM_SPEC_DEPTH:-1}"
 
 if [ -n "$TARGET" ]; then
